@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<div class = "left_body" >
+			<div class = "sheldule">
+				<h2>All Day</h2>
+				<ul class = "all_days">
+					{% for d in all_date %}
+						<form method="post">
+							{% csrf_token %}
+							<li class = "day"><button class = "day_b", type="submit" name = "day" value={{d}}>{{d}}</button>
+						</form>
+					{% endfor %}
+				</ul>
+			</div>
+			<div class = "team">
+				<div class = "choose_team">
+					<ul class="all_city">
+						{% for key, value in all_player.items %}
+							<li class="City"><span onclick="Collapser(this)"><button class="City_b", type="submit", name = "team", value = {{key}}_{{date}} , data-value = "OUI">{{key}}</button></span>
+								<ul class="play_ui">
+									{% for play in value %}
+										<form method="post">
+											{% csrf_token %}
+											<li class="player" id = "play" ><button class="player_B", type="submit", name = "player_v", value = "{{date}}_{{play}}" , data_value = "OUI" >{{play}}</button></li>
+										</form>						
+									{% endfor %}
+								</ul>
+							</li>
+						{% endfor %}	
+					</ul>
+				</div>
+				<div class = "choose_player">
+					
+				</div>
+			</div>
+		</div>
+		<div class = "right_body">
+				<div class="result">
+					<ul class="all_one_bet">
+						{% for day, bet in all_bet %}
+							<li class="one_bet">
+								<p class="prop">{{day}}</p>
+								<p class="prop">{{bet}}</p>
+							</li>						
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+			function Collapser(item)
+				{
+				  // Make sure the tags are setup correctly, if not just return
+				  if (!item.parentNode.getElementsByTagName("ul")[0]) return;
+				  var x = item.parentNode.getElementsByTagName("ul")[0];
+				  // if already visible, make disappear, otherwise reappear
+				  if(x.style.display == ""){
+				  	x.style.display = 'none';
+				  } 
+				  else{
+				  	const elements = document.getElementsByClassName("play_ui");
+					for (const e of elements) {
+						e.style.display = 'none';
+					}
+					x.style.display =  "";
+				  }
+				}
+			window.onload = function(){ 
+			    const elements = document.getElementsByClassName("play_ui");
+				for (const e of elements) {
+					e.style.display = 'none';
+				}
+			}
+		</script>
+	
+{% endblock %}

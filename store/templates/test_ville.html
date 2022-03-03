@@ -1,0 +1,11 @@
+{% block content %}
+	<form method="post">
+		{% csrf_token %}
+		<button type="submit" name = "name" value="Chacal land">Coucou</button>
+	</form>
+	<ul>
+	{% for ma in match %}
+		<li class="City"><button class="City_b">{{ma}}</button></li>
+	{% endfor %}	
+	</ul>
+{% endblock %}

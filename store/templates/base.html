@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Nball</title>
+		{% load static %}
+		<link rel="stylesheet" type="text/css" href="{% static 'store/Style.css' %}"/>
+	</head>
+
+	<body>
+		<header>
+			<div class ="he">
+				<div class = "header_1">			
+					<a>
+						<img src="{% static 'store/img/Logo.png' %}" class = "logo" width="240 px">
+					</a>
+					<div class ="coins_go">
+						<img class = "coins" src = "{% static 'store/img/coin.png' %}">
+						<p class = "coin_counter">125000</p>
+					</div>				
+				</div>
+				<div class = "header_2">
+					<ul class = "list_menu">	
+
+						<li class = "el_menu"><a class="el_menu_b" href = "http://127.0.0.1:8000">My deck</a></li>
+						<li class = "el_menu"><a class="el_menu_b" href="http://127.0.0.1:8000/store/my_score">Stats</a></li>
+						<li class = "el_menu"><a class="el_menu_b">Ranking</a></li>
+						<li class = "el_menu"><a class="el_menu_b">Calendar</a></li>
+						<li class = "el_menu"><a class="el_menu_b">Log in</a></li>
+					</ul>	
+				</div>
+			</div>
+		</header>
+		<div class ="conteneur">
+			{% block content %} {% endblock %}
+		</div>
+
+		<footer>
+			<h3>Contact me at nballer@outlook.fr</h3>
+			<form method="post">
+				{% csrf_token %}
+				<button class="logOut", type="submit", name = "logout">logOut</button>
+			</form>						
+		</footer>
+	</body>
+</html>

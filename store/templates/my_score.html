@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<div class = "div_score">
+		<ul class = "list_score">
+			{% for day, player, score in bets %}
+				<li class="bet_score">
+					<p class="prop">{{day}}</p>
+					<p class="prop">{{player}}</p>
+					<p class="prop">{{score}}</p>
+				</li>						
+			{% endfor %}
+		</ul>	
+	</div>	
+{% endblock %}

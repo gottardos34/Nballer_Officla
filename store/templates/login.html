@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Nball</title>
+		{% load static %}
+		<link rel="stylesheet" type="text/css" href="{% static 'store/log_style.css' %}"/>
+	</head>
+
+	<body>
+		<form method="post">
+			<div class="box">
+				<h1>Sign up</h1>
+				{% csrf_token %}
+				<input class="email" type="text" name="username" placeholder="username">
+				<input class="email" type="password" name="password" placeholder="password"/>			  
+				<input type="submit" name = "btn_log" class="btn" value="Log">
+				<input type="submit" name = "btn_sign" class="btn2" value="Sign Up">			  
+			</div> <!-- End Box -->		  
+		</form>
+		<p>Forgot your password? <u style="color:#f1c40f;">Click Here!</u></p>
+	</body>
+ </html> 

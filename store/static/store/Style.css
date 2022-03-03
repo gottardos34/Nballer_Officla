@@ -1,0 +1,276 @@
+html{
+	height: 100%;
+}
+.he{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+	background: linear-gradient(0.25turn, #9DD2FC, #FCB7A9);
+	height: 60px;
+	font-size: 14px;
+	font-family: Oswald, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.header_1{
+	align-items: center;
+	display: flex;
+	width: 40%; 
+}
+
+.logo{
+	width: 240 px;
+}
+.coins{
+	height: 34px;
+	align-items: center;
+	margin: 5px;
+}
+.header_2{
+	width: 60%;
+	display: flex;
+	justify-content: flex-end;
+	padding: 0, 12px;
+	
+}
+.coins_go{
+	display: flex;
+	align-items: center;
+}
+
+.list_menu {
+
+	display: flex;
+	padding: 0, 10px;
+	width: 100%;
+	justify-content: flex-end;
+
+}
+.el_menu{
+	margin: 15px;
+	text-align: center;
+	border: none;
+}
+.el_menu_b{
+	font-size: 14px;
+	font-family: Oswald, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: none;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+ul{
+	list-style-type: none;
+}
+
+body { 
+	margin:0; padding: 0;
+	height: 100%;
+}
+.sheldule{
+	background: white;
+	border-radius: 20px;
+	margin: 20px;
+	padding: 5px;
+}
+
+.left_body{
+	width: 50%;
+}
+.right_body{
+	width: 50%;
+}
+.conteneur{
+	display: flex;
+	background: #F2F2F2;
+	height: 100%;
+}
+h2{
+	font-size: 24px;
+	font-family: Oswald, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+.all_days{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.day{
+	width: 100%;
+	text-align: center;
+	margin: 10px, 10px;
+	height: 45px;
+	color: white;
+}
+ul{
+	padding-inline-start: 0px;
+}
+
+.day_b{
+	font-size: 14px;
+	font-family: Oswald, sans-serif;
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+	border-radius: 50px;
+	border: none;
+	background-color : black;
+	justify-content: center;
+	height: 40px;
+	width: 80px;
+}
+.day_b:hover{
+	border:0.16em solid white;
+	border-radius:2em;
+	border-color: black;
+	background : white;
+	color: black;
+}
+
+
+h3{
+	height: 100%;
+	text-align: center;
+	align-content: center;
+	color: white;
+	background-color: black;
+	margin-top: 0;
+}
+.City_b{
+	background-color: #F3D090;
+	border-color: #C69538;
+	font-family: Oswald, sans-serif;
+	font-weight: bold;
+	color: #574523 ;
+	width: 30%;
+	left: 100px;
+	border-radius: 20px;
+	padding: 10px;
+
+}
+.City_b:focus{
+	background-color: #EBAA2E;
+}
+
+.City{
+	
+	flex-direction: column;
+	margin: 10px;
+	left : 100px;
+}
+.all_city{
+	list-style-position: inside;
+	position: relative;
+	width: 92%;
+	left: 3%;
+}
+
+.play_ui{
+	list-style-position: inside;
+	position : absolute;
+	right : 0px;
+	top : 0px;
+	width: 50%;
+	border-radius: 20px;
+	background-color: #CFCECD;
+	border:0.16em solid white;
+	border-radius:2em;
+	border-color: black;
+}
+.choose_team{
+	width: 100%;
+	height: 100%;
+}
+.team{
+	display: flex;
+	justify-content: space-around;
+	background: white;
+	border-radius: 20px;
+	margin: 20px;
+	padding: 5px;
+}
+.player{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 1%;
+	padding: 1%;
+}
+
+.player_B{
+	background-color: black;
+	color: white;
+	border-radius: 20px;
+	padding: 10px;
+	border:0.16em solid white;
+	border-radius:2em;
+	border-color: white;
+	font-family: Oswald, sans-serif;
+	font-weight: bold;
+}
+.player_B:hover{
+	border:0.16em solid white;
+	border-radius:2em;
+	border-color: black;
+	background : white;
+	color: black;
+}
+
+.all_one_bet{
+	background-color: white;
+	border-radius: 20px;
+	margin: 20px;
+	padding: 5px;
+}
+
+.one_bet{
+	padding: 10px;
+	display: flex;
+}
+
+.prop{
+	margin: 10px;
+}
+
+.submit_button{	
+	background: #DAF7A6;
+	width: 30%;
+	color: black;
+	border-radius: 20px;
+	padding: 10px;
+	border:0.16em solid black;
+	border-radius:2em;
+	border-color: black;
+	font-family: Oswald, sans-serif;
+	font-weight: bold;
+}
+.submit{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.div_score{
+	width: 100%;
+	display: flex;
+}
+
+.bet_score{
+	width: 100%;
+	display: flex;
+}
+
+.list_score{
+	width: 100%;
+}
+
