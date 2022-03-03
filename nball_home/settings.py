@@ -11,19 +11,18 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
-import environ
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-env = environ.Env()
-environ.Env.read_env(env_file=str(BASE_DIR / "blog" / ".env"))
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
-SECRET_KEY = env("SECRET_KEY")
-DEBUG = env.bool("DEBUG")
-ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
+SECRET_KEY='django-insecure-jic16byltcv*tyn4c(95nfu@qw+^r11noe0i^_0vo7ju!!(6&)'
+DEBUG=True
+ALLOWED_HOSTS=[]
 
 
 # Application definition
@@ -117,10 +116,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'mediafiles'
 
 
 # Default primary key field type
