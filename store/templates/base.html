@@ -16,15 +16,15 @@
 					</a>
 					<div class ="coins_go">
 						<img class = "coins" src = "{% static 'store/img/coin.png' %}">
-						<p class = "coin_counter">125000</p>
+						<p class = "coin_counter">{{score_tot}}</p>
 					</div>				
 				</div>
 				<div class = "header_2">
 					<ul class = "list_menu">	
 
-						<li class = "el_menu"><a class="el_menu_b" href = "http://127.0.0.1:8000">My deck</a></li>
-						<li class = "el_menu"><a class="el_menu_b" href="http://127.0.0.1:8000/store/my_score">Stats</a></li>
-						<li class = "el_menu"><a class="el_menu_b">Ranking</a></li>
+						<li class = "el_menu"><a class="el_menu_b" href = "/">My deck</a></li>
+						<li class = "el_menu"><a class="el_menu_b" href="/store/my_score">Stats</a></li>
+						<li class = "el_menu"><a class="el_menu_b" href="/store/rank">Ranking</a></li>
 						<li class = "el_menu"><a class="el_menu_b">Calendar</a></li>
 						<li class = "el_menu"><a class="el_menu_b">Log in</a></li>
 					</ul>	

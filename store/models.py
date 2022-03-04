@@ -1,5 +1,10 @@
 from django.db import models
 
+class User_score(models.Model):
+    last_update = models.CharField(max_length=20)
+    score_tot = models.IntegerField()
+    id_user = models.IntegerField()
+
 class Match(models.Model):
 	id_match = models.CharField(max_length=20)
 	date = models.CharField(max_length=20)

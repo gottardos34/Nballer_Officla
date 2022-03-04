@@ -5,10 +5,10 @@
 			<div class = "sheldule">
 				<h2>All Day</h2>
 				<ul class = "all_days">
-					{% for d in all_date %}
+					{% for d, print in all_date %}
 						<form method="post">
 							{% csrf_token %}
-							<li class = "day"><button class = "day_b", type="submit" name = "day" value={{d}}>{{d}}</button>
+							<li class = "day"><button class = "day_b", type="submit" name = "day" value={{d}}>{{print}}</button>
 						</form>
 					{% endfor %}
 				</ul>
